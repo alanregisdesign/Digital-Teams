@@ -22,104 +22,24 @@
         <section id="teams">
             <h3>
                 Teams 
-                <button class="btn mini-title">
+                <button id="btnNovoTeam" class="btn mini-title">
                     <box-icon name='plus'></box-icon> Novo Team
                 </button>
             </h3>
-            <ul>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h5>Nome do Time <box-icon name='show' type="solid"></box-icon></h5>
-                    <h1> 0 <span>/ 0</span></h1>
-                    <div class="acoes">
-                        <button class="btn mini-title">Adicionar</button>
-                        <button class="btn"><box-icon name='trash-alt' type="solid"></box-icon></button>
-                    </div>
-                </li>
+            <ul id="listaDeTeams">
             </ul>
         </section>
     </main>
 
     <section id="overlay"></section>
     <section id="formCriar" class="modal">
-        <form>
-            <h3>Criar <box-icon name='x'></box-icon></h3>
-            <label for="teamNome">Nome</label>
+        <form onsubmit="adicionarTeam()">
+            <h3>Criar <box-icon id="fecharFormCriar" name='x'></box-icon></h3>
+            <label class="mini-title" for="teamNome">Nome</label>
             <input type="text" id="teamNome" placeholder="Digite o nome do team" required>
-            <label for="teamQtd">Nº de participantes</label>
+            <label class="mini-title" for="teamQtd">Nº de participantes</label>
             <input type="number" id="teamQtd" min="0" required>
-            <button type="submit" class="btn mini-title">Salvar</button>
+            <button type="submit" class="btn form mini-title">Salvar</button>
         </form>
     </section>
 

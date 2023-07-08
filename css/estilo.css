@@ -50,6 +50,79 @@
     fill: var(--light);
 }
 
+.modal{
+    width: 500px;
+    position: fixed;
+    top: 60%;
+    left: calc(50% - 250px);
+    border-radius: 10px;
+    background-color: var(--gray2);
+    padding: 16px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+}
+
+.modal.active{
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal form{
+    width: 100%;
+}
+
+.modal form h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.modal form h3 box-icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    fill: var(--light);
+    cursor: pointer;
+    transition-duration: 200ms;
+    border-radius: 20px;
+    background-color: var(--gray3);
+}
+
+.modal form h3 box-icon:hover{
+    background-color: var(--pink);
+}
+
+.modal form label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.modal form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: var(--gray2);
+    border: 2px solid var(--gray3);
+    transition-duration: 200ms;
+    margin-bottom: 16px;
+}
+
+.modal form input:focus{
+    border-color: var(--pink);
+}
+
+.btn.form{
+    width: 100%;
+    line-height: 40px;
+    justify-content: center;
+}
+
 body{
     background-color: var(--gray1);
 }
@@ -79,6 +152,7 @@ header .busca input{
     background-color: var(--gray2);
     border: 2px solid var(--gray3);
     transition-duration: 200ms;
+    margin-bottom: 16px;
 }
 header .busca input:focus{
     border-color: var(--pink);
@@ -181,4 +255,12 @@ main{
     left: 0;
     background-color: var(--gray0);
     opacity: .85;
+    transition-duration: 200ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#overlay.active{
+    opacity: .85;
+    visibility: visible;
 }
