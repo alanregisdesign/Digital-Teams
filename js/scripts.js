@@ -52,6 +52,7 @@ function adicionarTeam(){
         participantes: []
     }
     teams.push(team);
+    fc.reset();
     overlay.classList.remove('active')
     formCriar.classList.remove('active')
     listarTeams()
