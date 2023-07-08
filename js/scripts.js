@@ -22,7 +22,7 @@ const teams = [
     {
         nome: 'nome 2',
         qtd: 10,
-        participantes: ['Luiz', 'MeliMarjore', 'Lorena']
+        participantes: ['Luiz', 'Marjore', 'Lorena']
     }
 ];
 
