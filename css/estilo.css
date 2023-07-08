@@ -107,4 +107,78 @@ main{
     justify-content: space-between;
 }
 
+#teams ul{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
+#teams ul li{
+    width: calc(20% - 13px);
+    background-color: var(--gray2);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+#teams ul li h5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#teams ul li h5 box-icon{
+    fill: white;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+#teams ul li h5 box-icon:hover{
+    fill: var(--pink);
+}
+
+#teams ul li h1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--gray3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 26px auto;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+#teams ul li h1 span{
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#teams ul li .acoes{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+#teams ul li .acoes .btn:first-child{
+    flex: 1;
+    justify-content: center;
+}
+
+#teams ul li .acoes .btn:last-child{
+    padding-right: 0;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--gray0);
+    opacity: .85;
+}
