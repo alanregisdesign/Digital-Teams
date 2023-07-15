@@ -75,14 +75,14 @@
     width: 100%;
 }
 
-.modal form h3{
+.modal h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 26px;
 }
 
-.modal form h3 box-icon{
+.modal h3 box-icon{
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -263,4 +263,28 @@ main{
 #overlay.active{
     opacity: .85;
     visibility: visible;
+}
+
+.modal ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    background-color: var(--gray3);
+    padding: 6px;
+}
+
+.modal ul li box-icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    fill: var(--light);
+    cursor: pointer;
+    transition-duration: 200ms;
+    border-radius: 20px;
+}
+
+.modal ul li box-icon:hover{
+    background-color: var(--pink);
 }
